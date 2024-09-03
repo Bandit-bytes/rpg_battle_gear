@@ -1,0 +1,6 @@
+{
+  "parent": "rpg_battle_gear:block/infusion_altar",
+  "textures": {
+    "all": "rpg_battle_gear:block/infusion_altar"
+  }
+}

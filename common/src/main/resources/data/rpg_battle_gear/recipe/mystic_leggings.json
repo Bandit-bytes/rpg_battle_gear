@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "rpg_battle_gear:mystic_essence"
+  },
+  "base": {
+    "item": "minecraft:diamond_leggings"
+  },
+  "addition": {
+    "item": "minecraft:diamond"
+  },
+  "result": {
+    "count": 1,
+    "id": "rpg_battle_gear:mystic_leggings"
+  }
+}

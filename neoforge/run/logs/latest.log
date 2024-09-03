@@ -1,0 +1,218 @@
+[20:27:53] [main/INFO] (Launcher) ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 21.0.167, --assetIndex, 1.21-17, --assetsDir, C:\Users\noide\.gradle\caches\fabric-loom\assets, --gameDir, ., --fml.neoForgeVersion, 21.0.167, --fml.fmlVersion, 4.0.23, --fml.mcVersion, 1.21, --fml.neoFormVersion, 20240613.152323]
+[20:27:53] [main/INFO] (Launcher) JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[20:27:53] [main/INFO] (Launcher) ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[20:27:53] [main/INFO] (ImmediateWindowHandler) Loading ImmediateWindowProvider fmlearlywindow
+[20:27:53] [main/INFO] (EARLYDISPLAY) Trying GL version 4.6
+[20:27:53] [main/INFO] (EARLYDISPLAY) Requested GL version 4.6 got version 4.6
+[20:27:53] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.6 Source=union:/C:/Users/noide/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.14.0+mixin.0.8.6/c265173c84346e9e5d42a2384b2b02bd39a4a899/sponge-mixin-0.14.0+mixin.0.8.6.jar%23123!/ Service=ModLauncher Env=CLIENT
+[20:27:54] [main/INFO] (ModDiscoverer) Found mod file "neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar" [locator: neoforge devenv provider ([C:\Users\noide\.gradle\caches\fabric-loom\minecraftMaven\net\minecraft\neoforge-21.0.167-minecraft-merged\1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167\neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar])]
+[20:27:54] [main/INFO] (ModDiscoverer) Found mod file "neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar" [locator: neoforge devenv provider ([C:\Users\noide\.gradle\caches\fabric-loom\minecraftMaven\net\minecraft\neoforge-21.0.167-minecraft-merged\1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167\neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar])]
+[20:27:54] [main/INFO] (ModDiscoverer) Found mod file "main" [locator: userdev mods and services, reader: mod manifest]
+[20:27:54] [main/INFO] (ModDiscoverer) Found mod file "jei-238222-5686637.jar" [locator: userdev mods and services, reader: mod manifest]
+[20:27:54] [main/INFO] (ModDiscoverer) Found mod file "neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar" [locator: userdev mods and services, reader: mod manifest]
+[20:27:54] [main/INFO] (ModDiscoverer) Found mod file "architectury-neoforge-13.0.6.jar" [locator: userdev mods and services, reader: mod manifest]
+[20:27:54] [main/INFO] (ModDiscoverer) Found mod file "7044119233125865956.jar" [locator: userdev mods and services, reader: mod manifest]
+[20:27:54] [pool-5-thread-1/INFO] (EARLYDISPLAY) GL info: NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 555.85, NVIDIA Corporation
+[20:27:54] [main/INFO] (ModDiscoverer) Found gamelibrary file "mixinextras-neoforge-0.3.5.jar" [locator: userdev mods and services, reader: mod manifest]
+[20:27:54] [main/WARN] (JarSelector) Attempted to select a dependency jar for JarJar which was passed in as source: mixinextras-neoforge-0.3.5.jar. Using Mod File: C:\Users\noide\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-neoforge\0.3.5\ef3ffcf309dae656517b2f120189b1c9b21737dd\mixinextras-neoforge-0.3.5.jar
+[20:27:54] [main/INFO] (JarInJarDependencyLocator) No dependencies to load found. Skipping!
+[20:27:54] [main/INFO] (FMLServiceProvider) Loading coremod script-engine for [neoforge]
+[20:27:54] [main/INFO] (mixin) Compatibility level set to JAVA_21
+[20:27:54] [main/INFO] (LaunchServiceHandler) Launching target 'forgeclientuserdev' with arguments [--version, 21.0.167, --gameDir, ., --assetsDir, C:\Users\noide\.gradle\caches\fabric-loom\assets, --assetIndex, 1.21-17]
+[20:27:54] [main/INFO] (unprotect) Found 8254 Minecraft classes
+[20:27:55] [main/INFO] (MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
+[02Sep2024 20:27:56.326] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 281 milliseconds
+[02Sep2024 20:27:59.834] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02Sep2024 20:27:59.834] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02Sep2024 20:27:59.836] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02Sep2024 20:27:59.837] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02Sep2024 20:27:59.837] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02Sep2024 20:27:59.916] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/noide/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/neoforge-21.0.167-minecraft-merged/1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167/neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[02Sep2024 20:27:59.916] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/noide/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/neoforge-21.0.167-minecraft-merged/1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167/neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[02Sep2024 20:27:59.933] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[02Sep2024 20:27:59.939] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[02Sep2024 20:27:59.990] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[02Sep2024 20:28:00.137] [Thread-4/INFO] [com.mojang.blaze3d.platform.GlDebug/]: OpenGL debug message: id=1282, source=API, type=ERROR, severity=HIGH, message='GL_INVALID_OPERATION error generated. Source and destination dimensions must be identical with the current filtering modes.'
+[02Sep2024 20:28:00.148] [Thread-4/INFO] [com.mojang.blaze3d.platform.GlDebug/]: OpenGL debug message: id=1282, source=API, type=ERROR, severity=HIGH, message='GL_INVALID_OPERATION error generated. Source and destination dimensions must be identical with the current filtering modes.'
+[02Sep2024 20:28:00.163] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.0.167, for MC 1.21
+[02Sep2024 20:28:00.201] [Thread-4/INFO] [com.mojang.blaze3d.platform.GlDebug/]: OpenGL debug message: id=1282, source=API, type=ERROR, severity=HIGH, message='GL_INVALID_OPERATION error generated. Source and destination dimensions must be identical with the current filtering modes.'
+[02Sep2024 20:28:00.254] [Thread-4/INFO] [com.mojang.blaze3d.platform.GlDebug/]: OpenGL debug message: id=1282, source=API, type=ERROR, severity=HIGH, message='GL_INVALID_OPERATION error generated. Source and destination dimensions must be identical with the current filtering modes.'
+[02Sep2024 20:28:00.290] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[02Sep2024 20:28:00.292] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 1.381 ms
+[02Sep2024 20:28:00.305] [Thread-4/INFO] [com.mojang.blaze3d.platform.GlDebug/]: OpenGL debug message: id=1282, source=API, type=ERROR, severity=HIGH, message='GL_INVALID_OPERATION error generated. Source and destination dimensions must be identical with the current filtering modes.'
+[02Sep2024 20:28:00.321] [Thread-4/INFO] [com.mojang.blaze3d.platform.GlDebug/]: OpenGL debug message: id=1282, source=API, type=ERROR, severity=HIGH, message='GL_INVALID_OPERATION error generated. Source and destination dimensions must be identical with the current filtering modes.'
+[02Sep2024 20:28:00.374] [Thread-4/INFO] [com.mojang.blaze3d.platform.GlDebug/]: OpenGL debug message: id=1282, source=API, type=ERROR, severity=HIGH, message='GL_INVALID_OPERATION error generated. Source and destination dimensions must be identical with the current filtering modes.'
+[02Sep2024 20:28:00.424] [Thread-4/INFO] [com.mojang.blaze3d.platform.GlDebug/]: OpenGL debug message: id=1282, source=API, type=ERROR, severity=HIGH, message='GL_INVALID_OPERATION error generated. Source and destination dimensions must be identical with the current filtering modes.'
+[02Sep2024 20:28:00.453] [Thread-4/INFO] [com.mojang.blaze3d.platform.GlDebug/]: OpenGL debug message: id=1282, source=API, type=ERROR, severity=HIGH, message='GL_INVALID_OPERATION error generated. Source and destination dimensions must be identical with the current filtering modes.'
+[02Sep2024 20:28:00.789] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[02Sep2024 20:28:00.871] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/generated_5d472d9, mod/architectury, mod/rpg_battle_gear, mod/neoforge, mod/jei
+[02Sep2024 20:28:00.937] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[02Sep2024 20:28:00.938] [Worker-Main-11/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[02Sep2024 20:28:01.843] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[02Sep2024 20:28:01.843] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[02Sep2024 20:28:01.923] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (HyperX Quadcast)
+[02Sep2024 20:28:01.923] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[02Sep2024 20:28:02.000] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[02Sep2024 20:28:02.005] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[02Sep2024 20:28:02.006] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[02Sep2024 20:28:02.006] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[02Sep2024 20:28:02.006] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[02Sep2024 20:28:02.009] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[02Sep2024 20:28:02.009] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[02Sep2024 20:28:02.009] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[02Sep2024 20:28:02.009] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[02Sep2024 20:28:02.127] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[02Sep2024 20:28:02.128] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[02Sep2024 20:28:02.128] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[02Sep2024 20:28:02.128] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[02Sep2024 20:28:02.128] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[02Sep2024 20:28:02.144] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[02Sep2024 20:28:02.181] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[02Sep2024 20:28:06.234] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe rpg_battle_gear:paladin_leggings
+com.google.gson.JsonParseException: Failed to parse either. First: Not a json array: {"item":"rpg_battle_gear:paladin_emblem"}; Second: No key tag in MapLike[{"item":"rpg_battle_gear:paladin_emblem"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: rpg_battle_gear:paladin_emblem
+	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23148!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:36) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.packs.resources.SimplePreparableReloadListener.method_18790(SimplePreparableReloadListener.java:19) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.server.packs.resources.SimpleReloadInstance.method_18365(SimpleReloadInstance.java:69) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:201) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:345) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:334) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:296) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.MouseHandler.method_1611(MouseHandler.java:98) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:449) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.MouseHandler.method_22686(MouseHandler.java:202) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.MouseHandler.method_22684(MouseHandler.java:202) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.3.jar%23171!/:build 5]
+	at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.3.jar%23183!/:build 5]
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3438) ~[lwjgl-glfw-3.3.3.jar%23171!/:build 5]
+	at TRANSFORMER/minecraft@1.21/com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:134) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:143) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:290) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.Minecraft.runTick(Minecraft.java:1217) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.0.167-minecraft-merged-1.21-loom.mappings.1_21.layered+hash.40359-v2-neoforge-21.0.167.jar%23191!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.23/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.23.jar%23104!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.23/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.23.jar%23104!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.23/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.23.jar%23104!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.23/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.23.jar%23104!/:4.0]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23106!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23106!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23106!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23106!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23106!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23106!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23106!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+	at dev.architectury.transformer.TransformerRuntime.main(TransformerRuntime.java:220) [architectury-transformer-5.2.87-runtime.jar:5.2.87]
+[02Sep2024 20:28:06.238] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1306 recipes
+[02Sep2024 20:28:06.337] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[02Sep2024 20:28:06.638] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent too early, ignoring
+[02Sep2024 20:28:06.705] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21
+[02Sep2024 20:28:06.705] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[02Sep2024 20:28:07.163] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[02Sep2024 20:28:07.353] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[02Sep2024 20:28:07.413] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[02Sep2024 20:28:07.428] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 257 ms
+[02Sep2024 20:28:07.475] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[02Sep2024 20:28:07.475] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[02Sep2024 20:28:07.840] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent
+[02Sep2024 20:28:07.961] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:ceeb7f7a] logged in with entity id 40 at (-25.51671306550818, 69.0, 78.24297952285026)
+[02Sep2024 20:28:08.002] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[02Sep2024 20:28:08.317] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.RecipesUpdatedEvent
+[02Sep2024 20:28:08.317] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from LISTENING to JEI_STARTED
+[02Sep2024 20:28:08.317] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[02Sep2024 20:28:08.323] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[02Sep2024 20:28:08.327] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 4.185 ms
+[02Sep2024 20:28:08.328] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[02Sep2024 20:28:08.329] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 1.095 ms
+[02Sep2024 20:28:08.330] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[02Sep2024 20:28:08.413] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Operator Utilities
+[02Sep2024 20:28:08.434] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 102.9 milliseconds
+[02Sep2024 20:28:08.434] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 103.6 ms
+[02Sep2024 20:28:08.435] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[02Sep2024 20:28:08.435] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 584.3 μs
+[02Sep2024 20:28:08.442] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[02Sep2024 20:28:08.443] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 600.9 μs
+[02Sep2024 20:28:08.464] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[02Sep2024 20:28:08.478] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 13.65 milliseconds
+[02Sep2024 20:28:08.491] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: rpg_battle_gear:jei_plugin took 13.33 milliseconds
+[02Sep2024 20:28:08.497] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 33.62 ms
+[02Sep2024 20:28:08.498] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[02Sep2024 20:28:08.501] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 2.770 ms
+[02Sep2024 20:28:08.502] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[02Sep2024 20:28:08.503] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 1.042 ms
+[02Sep2024 20:28:08.504] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[02Sep2024 20:28:08.517] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 13.12 ms
+[02Sep2024 20:28:08.519] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[02Sep2024 20:28:08.520] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 738.9 μs
+[02Sep2024 20:28:08.521] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[02Sep2024 20:28:08.625] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 103.2 milliseconds
+[02Sep2024 20:28:08.642] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 16.48 milliseconds
+[02Sep2024 20:28:08.642] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 121.0 ms
+[02Sep2024 20:28:08.648] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[02Sep2024 20:28:08.651] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 2.731 ms
+[02Sep2024 20:28:08.658] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[02Sep2024 20:28:08.661] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[02Sep2024 20:28:08.666] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 4.671 ms
+[02Sep2024 20:28:08.669] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[02Sep2024 20:28:08.670] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[02Sep2024 20:28:08.670] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[02Sep2024 20:28:08.686] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 15.24 ms
+[02Sep2024 20:28:08.686] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[02Sep2024 20:28:08.717] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1710 ingredients
+[02Sep2024 20:28:08.843] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1710 ingredients
+[02Sep2024 20:28:08.844] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 156.8 ms
+[02Sep2024 20:28:08.945] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 274.7 milliseconds
+[02Sep2024 20:28:08.945] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 275.3 ms
+[02Sep2024 20:28:08.945] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 286.4 ms
+[02Sep2024 20:28:08.946] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[02Sep2024 20:28:08.946] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 309.2 μs
+[02Sep2024 20:28:08.946] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 627.8 ms
+[02Sep2024 20:28:08.961] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 44 advancements
+[02Sep2024 20:30:05.766] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[02Sep2024 20:30:05.796] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[02Sep2024 20:30:05.849] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[02Sep2024 20:30:05.978] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[02Sep2024 20:30:44.715] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[02Sep2024 20:30:44.746] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[02Sep2024 20:30:44.797] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[02Sep2024 20:30:44.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[02Sep2024 20:30:46.898] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[02Sep2024 20:30:46.901] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent$LoggingOut
+[02Sep2024 20:30:46.901] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to LISTENING
+[02Sep2024 20:30:46.901] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[02Sep2024 20:30:46.901] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[02Sep2024 20:30:46.901] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[02Sep2024 20:30:46.903] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 2.037 ms
+[02Sep2024 20:30:46.920] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[02Sep2024 20:30:46.920] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[02Sep2024 20:30:46.938] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[02Sep2024 20:30:46.965] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[02Sep2024 20:30:46.965] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[02Sep2024 20:30:46.965] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[02Sep2024 20:30:47.029] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[02Sep2024 20:30:47.382] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[02Sep2024 20:30:47.400] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[02Sep2024 20:30:47.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[02Sep2024 20:30:47.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[02Sep2024 20:30:47.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[02Sep2024 20:30:47.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

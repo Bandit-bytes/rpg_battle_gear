@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "O O",
+    "OOO"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "id": "rpg_battle_gear:infusion_altar",
+    "count": 1
+  }
+}

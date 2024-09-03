@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "rpg_battle_gear:guardian_heart"
+  },
+  "base": {
+    "item": "minecraft:golden_boots"
+  },
+  "addition": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "rpg_battle_gear:guardian_boots"
+  }
+}
