@@ -24,6 +24,7 @@ public final class BattleGearArmorMaterials {
     public static final Holder<ArmorMaterial> MYSTIC;
     public static final Holder<ArmorMaterial> TEMPLAR;
     public static final Holder<ArmorMaterial> GUARDIAN;
+    public static final Holder<ArmorMaterial> SERAPHIM;
 
     private BattleGearArmorMaterials() {
     }
@@ -44,6 +45,13 @@ public final class BattleGearArmorMaterials {
         }), 15, 2.5F, 0.1F, Items.DIAMOND);
 
         TEMPLAR = register("templar", Util.make(new EnumMap<>(ArmorItem.Type.class), (map) -> {
+            map.put(ArmorItem.Type.BOOTS, 5);
+            map.put(ArmorItem.Type.LEGGINGS, 9);
+            map.put(ArmorItem.Type.CHESTPLATE, 12);
+            map.put(ArmorItem.Type.HELMET, 6);
+        }), 20, 3.0F, 0.1F, Items.NETHERITE_INGOT);
+
+        SERAPHIM = register("seraphim", Util.make(new EnumMap<>(ArmorItem.Type.class), (map) -> {
             map.put(ArmorItem.Type.BOOTS, 5);
             map.put(ArmorItem.Type.LEGGINGS, 9);
             map.put(ArmorItem.Type.CHESTPLATE, 12);

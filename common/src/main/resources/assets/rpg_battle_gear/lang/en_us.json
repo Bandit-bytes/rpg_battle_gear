@@ -8,6 +8,10 @@
   "item.rpg_battle_gear.guardian_chestplate": "Guardian Chestplate",
   "item.rpg_battle_gear.guardian_leggings": "Guardian Leggings",
   "item.rpg_battle_gear.guardian_boots": "Guardian Boots",
+  "item.rpg_battle_gear.seraphim_helmet": "Seraphim Helmet",
+  "item.rpg_battle_gear.seraphim_chestplate": "Seraphim Chestplate",
+  "item.rpg_battle_gear.seraphim_leggings": "Seraphim Leggings",
+  "item.rpg_battle_gear.seraphim_boots": "Seraphim Boots",
   "item.rpg_battle_gear.crusader_helmet": "Crusader Helmet",
   "item.rpg_battle_gear.crusader_chestplate": "Crusader Chestplate",
   "item.rpg_battle_gear.crusader_leggings": "Crusader Leggings",
@@ -31,10 +35,12 @@
   "item.battlegear.mystic_armor.tooltip": "Mystic's Garb",
   "item.battlegear.templar_armor.tooltip": "Templar's Aegis",
   "item.battlegear.guardian_armor.tooltip": "Guardian's Bastion",
+  "item.battlegear.seraphim_armor.tooltip": "Worn by the celestial warriors of the skies.",
 
   "tooltip.battlegear.crusader_armor.effect": "Don the Armor of Crusader, and let swiftness be your ally.",
   "tooltip.battlegear.mystic_armor.effect": "Clad in the Mystic's Garb, your strikes are imbued with arcane might.",
   "tooltip.battlegear.templar_armor.effect": "Wield the Templar's Aegis, standing resolute against any foe.",
-  "tooltip.battlegear.guardian_armor.effect": "Bear the Guardian's Bastion, and fortify your very soul."
+  "tooltip.battlegear.guardian_armor.effect": "Bear the Guardian's Bastion, and fortify your very soul.",
+  "tooltip.battlegear.seraphim_armor.effect": "Full set grants Wind's Embrace, boosting your agility."
 
 }

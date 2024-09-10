@@ -40,7 +40,6 @@ subprojects {
         mappings loom.officialMojangMappings()
 
         implementation "curse.maven:jei-238222:5686637"
-
     }
 
     java {

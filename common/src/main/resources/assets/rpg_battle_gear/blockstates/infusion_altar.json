@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "rpg_battle_gear:block/infusion_altar" }
+    "facing=north": { "model": "rpg_battle_gear:block/infusion_altar", "y": 270 },
+    "facing=south": { "model": "rpg_battle_gear:block/infusion_altar", "y": 90 },
+    "facing=west": { "model": "rpg_battle_gear:block/infusion_altar", "y": 180 },
+    "facing=east": { "model": "rpg_battle_gear:block/infusion_altar", "y": 0 }
   }
 }

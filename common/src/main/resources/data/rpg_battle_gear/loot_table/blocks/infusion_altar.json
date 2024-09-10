@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "rpg_battle_gear:infusion_altar"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "rpg_battle_gear:blocks/infusion_altar"
+}
