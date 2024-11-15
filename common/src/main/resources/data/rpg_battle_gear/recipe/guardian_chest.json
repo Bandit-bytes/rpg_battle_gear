@@ -4,10 +4,10 @@
     "item": "rpg_battle_gear:guardian_heart"
   },
   "base": {
-    "item": "minecraft:golden_chestplate"
+    "item": "minecraft:diamond_chestplate"
   },
   "addition": {
-    "item": "minecraft:gold_ingot"
+    "item": "minecraft:diamond"
   },
   "result": {
     "count": 1,

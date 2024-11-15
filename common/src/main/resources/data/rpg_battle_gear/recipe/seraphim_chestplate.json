@@ -1,16 +1,16 @@
 {
   "type": "minecraft:smithing_transform",
   "template": {
-    "item": "rpg_battle_gear:guardian_heart"
+    "item": "rpg_battle_gear:sacred_gem"
   },
   "base": {
-    "item": "minecraft:diamond_boots"
+    "item": "minecraft:diamond_chestplate"
   },
   "addition": {
     "item": "minecraft:diamond"
   },
   "result": {
     "count": 1,
-    "id": "rpg_battle_gear:guardian_boots"
+    "id": "rpg_battle_gear:seraphim_chestplate"
   }
 }

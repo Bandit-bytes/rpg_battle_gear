@@ -4,10 +4,10 @@
     "item": "rpg_battle_gear:mystic_essence"
   },
   "base": {
-    "item": "minecraft:diamond_boots"
+    "item": "minecraft:netherite_boots"
   },
   "addition": {
-    "item": "minecraft:diamond"
+    "item": "minecraft:netherite_ingot"
   },
   "result": {
     "count": 1,
