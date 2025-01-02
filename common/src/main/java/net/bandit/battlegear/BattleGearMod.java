@@ -11,7 +11,6 @@ public final class BattleGearMod {
         TabRegistry.init();
         MenuRegistry.init();
         BlockRegistry.init();
-        // Write common init code here.
     }
     public static void initClient() {
         MenuRegistry.registerScreens();
