@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    " F ",
+    " S "
+  ],
+  "key": {
+    "W": { "item": "minecraft:heart_of_the_sea" },
+    "F": { "item": "rpg_battle_gear:mystic_essence" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:ocean_sword"
+  }
+}

@@ -1,5 +1,6 @@
 package net.bandit.battlegear.item.armor;
 
+import net.bandit.battlegear.config.BattleGearConfig;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
@@ -23,7 +24,7 @@ public class SeraphimArmorItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, Level world, net.minecraft.world.entity.Entity entity, int slot, boolean isSelected) {
         if (entity instanceof Player player && !world.isClientSide) {
-            if (hasFullSet(player)) {
+            if (BattleGearConfig.ENABLE_SERAPHIM_SET_BONUS && hasFullSet(player)) {
                 player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 200, 0, true, false, false));
             }
         }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "IWI",
+    " S "
+  ],
+  "key": {
+    "I": { "item": "minecraft:ink_sac" },
+    "W": { "item": "rpg_battle_gear:mystic_essence" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:octopus_sword"
+  }
+}

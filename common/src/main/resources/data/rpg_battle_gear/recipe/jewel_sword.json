@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "LNL",
+    " S "
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "L": { "item": "rpg_battle_gear:sacred_gem" },
+    "N": { "item": "rpg_battle_gear:ancient_core" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:jewel_sword"
+  }
+}

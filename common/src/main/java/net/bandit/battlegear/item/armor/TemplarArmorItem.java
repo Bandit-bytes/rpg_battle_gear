@@ -1,5 +1,6 @@
 package net.bandit.battlegear.item.armor;
 
+import net.bandit.battlegear.config.BattleGearConfig;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
@@ -24,9 +25,10 @@ public class TemplarArmorItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, Level world, net.minecraft.world.entity.Entity entity, int slot, boolean isSelected) {
         if (entity instanceof Player player && !world.isClientSide) {
-            if (hasFullSet(player)) {
+            if (BattleGearConfig.ENABLE_TEMPLAR_SET_BONUS && hasFullSet(player)) {
                 player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, true, false, false));
             }
+
         }
         super.inventoryTick(stack, world, entity, slot, isSelected);
     }

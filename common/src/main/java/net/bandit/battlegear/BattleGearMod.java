@@ -1,6 +1,7 @@
 package net.bandit.battlegear;
 
 
+import net.bandit.battlegear.config.BattleGearConfig;
 import net.bandit.battlegear.registry.*;
 
 public final class BattleGearMod {
@@ -11,6 +12,7 @@ public final class BattleGearMod {
         TabRegistry.init();
         MenuRegistry.init();
         BlockRegistry.init();
+        BattleGearConfig.loadConfig();
     }
     public static void initClient() {
         MenuRegistry.registerScreens();

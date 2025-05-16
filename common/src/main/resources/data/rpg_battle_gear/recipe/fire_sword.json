@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "FLF",
+    " S "
+  ],
+  "key": {
+    "F": { "item": "minecraft:fire_charge" },
+    "L": { "item": "rpg_battle_gear:sacred_gem" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:fire_sword"
+  }
+}

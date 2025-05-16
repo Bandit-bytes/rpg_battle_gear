@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LFL",
+    " F ",
+    " S "
+  ],
+  "key": {
+    "L": { "item": "minecraft:blaze_powder" },
+    "F": { "item": "rpg_battle_gear:sacred_gem" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:lava_sword"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "SLS",
+    " S "
+  ],
+  "key": {
+    "I": { "item": "minecraft:blue_ice" },
+    "L": { "item": "rpg_battle_gear:mystic_essence" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:ice_sword"
+  }
+}

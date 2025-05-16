@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "rpg_battle_gear:mystic_boots",
+    "rpg_battle_gear:guardian_boots",
+    "rpg_battle_gear:seraphim_boots",
+    "rpg_battle_gear:crusader_boots",
+    "rpg_battle_gear:templar_boots"
+  ]
+}

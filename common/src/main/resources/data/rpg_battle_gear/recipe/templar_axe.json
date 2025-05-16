@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TM ",
+    "TS ",
+    " S "
+  ],
+  "key": {
+    "T": { "item": "rpg_battle_gear:templar_emblem" },
+    "M": { "item": "rpg_battle_gear:mystic_essence" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:templar_axe"
+  }
+}

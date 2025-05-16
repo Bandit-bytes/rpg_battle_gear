@@ -2,13 +2,11 @@ package net.bandit.battlegear.registry;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
-import net.bandit.battlegear.item.BattleGearArmorMaterials;
+import net.bandit.battlegear.item.*;
 import net.bandit.battlegear.item.armor.*;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.bandit.battlegear.BattleGearMod;
-import net.minecraft.world.item.Rarity;
 
 public class BattleGearItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(BattleGearMod.MOD_ID, Registries.ITEM);
@@ -59,12 +57,59 @@ public class BattleGearItems {
     public static final RegistrySupplier<Item> SERAPHIM_BOOTS = ITEMS.register("seraphim_boots",
             () -> new SeraphimArmorItem(BattleGearArmorMaterials.SERAPHIM, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.RARE)));
 
-    // TODO WEAPONS
-//    public static final RegistrySupplier<Item> VALOR_SWORD = ITEMS.register("valor_sword", () -> new SwordItem(Tiers.IRON, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
-//    public static final RegistrySupplier<Item> MYSTIC_SHIELD = ITEMS.register("mystic_shield", () -> new Item(new Item.Properties().stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
-//    public static final RegistrySupplier<Item> templar_AXE = ITEMS.register("templar_axe", () -> new SwordItem(Tiers.IRON, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
-//    public static final RegistrySupplier<Item> GUARDIAN_HAMMER = ITEMS.register("guardian_hammer", () -> new SwordItem(Tiers.IRON, 5, -2.8F, new Item.Properties().rarity(Rarity.RARE).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
-
+    //WEAPONS
+    public static final RegistrySupplier<Item> VALOR_SWORD = ITEMS.register("valor_sword", () ->
+            new SwordItem(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 7, -2.0F)).rarity(Rarity.UNCOMMON)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> TEMPLAR_AXE = ITEMS.register("templar_axe", () ->
+            new SwordItem(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 11, -2.0F)).rarity(Rarity.RARE)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> GUARDIAN_HAMMER = ITEMS.register("guardian_hammer", () ->
+            new SwordItem(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 13, -2.0F)).rarity(Rarity.EPIC)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> LAVA_SWORD = ITEMS.register("lava_sword", () ->
+            new LavaSword(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 7, -2.2F))
+                    .rarity(Rarity.UNCOMMON)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> OCEAN_SWORD = ITEMS.register("ocean_sword", () ->
+            new OceanSword(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 6, -1.8F))
+                    .rarity(Rarity.UNCOMMON)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> OCTOPUS_SWORD = ITEMS.register("octopus_sword", () ->
+            new OctopusSword(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 8, -2.4F))
+                    .rarity(Rarity.RARE)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> EXPLOSION_SWORD = ITEMS.register("explosion_sword", () ->
+            new ExplosionSword(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 10, -2.8F))
+                    .rarity(Rarity.EPIC)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> FIRE_SWORD = ITEMS.register("fire_sword", () ->
+            new FireSword(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 9, -2.2F))
+                    .rarity(Rarity.RARE)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> FLOWER_SWORD = ITEMS.register("flower_sword", () ->
+            new FlowerSword(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 6, -2.0F))
+                    .rarity(Rarity.UNCOMMON)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> ICE_SWORD = ITEMS.register("ice_sword", () ->
+            new IceSword(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 7, -2.0F))
+                    .rarity(Rarity.UNCOMMON)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> JEWEL_SWORD = ITEMS.register("jewel_sword", () ->
+            new JewelSword(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 8, -1.6F))
+                    .rarity(Rarity.EPIC)
+                    .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
 
     // MISCELLANEOUS
     public static final RegistrySupplier<Item> SACRED_GEM = ITEMS.register("sacred_gem", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.RARE).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));

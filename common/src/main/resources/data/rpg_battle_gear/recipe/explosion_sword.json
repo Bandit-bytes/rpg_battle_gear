@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "TNT",
+    " S "
+  ],
+  "key": {
+    "G": { "item": "rpg_battle_gear:guardian_heart" },
+    "T": { "item": "minecraft:tnt" },
+    "N": { "item": "minecraft:nether_star" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:explosion_sword"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "FLF",
+    " S "
+  ],
+  "key": {
+    "R": { "item": "minecraft:rose_bush" },
+    "F": { "item": "minecraft:poppy" },
+    "L": { "item": "rpg_battle_gear:mystic_essence" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:flower_sword"
+  }
+}

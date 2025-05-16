@@ -1,4 +1,14 @@
 [
   {"version":2},
-  {"ingredient":{"id":"rpg_battle_gear:guardian_heart"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"rpg_battle_gear:valor_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:templar_axe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:guardian_hammer","components":{"minecraft:damage":2}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:lava_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:ocean_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:octopus_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:explosion_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:fire_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:flower_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:ice_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rpg_battle_gear:jewel_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GAG",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "G": { "item": "rpg_battle_gear:guardian_heart" },
+    "A": { "item": "rpg_battle_gear:ancient_core" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "rpg_battle_gear:guardian_hammer"
+  }
+}

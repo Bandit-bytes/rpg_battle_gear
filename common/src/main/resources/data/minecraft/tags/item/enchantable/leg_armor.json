@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "rpg_battle_gear:mystic_leggings",
+    "rpg_battle_gear:guardian_leggings",
+    "rpg_battle_gear:seraphim_leggings",
+    "rpg_battle_gear:crusader_leggings",
+    "rpg_battle_gear:templar_leggings"
+  ]
+}

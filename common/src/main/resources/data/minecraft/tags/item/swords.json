@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "rpg_battle_gear:valor_sword",
+    "rpg_battle_gear:templar_axe",
+    "rpg_battle_gear:guardian_hammer",
+    "rpg_battle_gear:lava_sword",
+    "rpg_battle_gear:ocean_sword",
+    "rpg_battle_gear:octopus_sword",
+    "rpg_battle_gear:explosion_sword",
+    "rpg_battle_gear:fire_sword",
+    "rpg_battle_gear:flower_sword",
+    "rpg_battle_gear:ice_sword",
+    "rpg_battle_gear:jewel_sword"
+  ]
+}
