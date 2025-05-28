@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "rpg_battle_gear:mystic_chestplate",
     "rpg_battle_gear:guardian_chestplate",

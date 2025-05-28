@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "rpg_battle_gear:mystic_helmet",
     "rpg_battle_gear:guardian_helmet",
