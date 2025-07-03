@@ -10,12 +10,12 @@ public final class BattleGearMod {
     public static void init() {
         BattleGearItems.init();
         TabRegistry.init();
-        MenuRegistry.init();
+        MenuRegistries.init();
         BlockRegistry.init();
         BattleGearConfig.loadConfig();
     }
     public static void initClient() {
-        MenuRegistry.registerScreens();
+        MenuRegistries.registerScreens();
     }
 
 }

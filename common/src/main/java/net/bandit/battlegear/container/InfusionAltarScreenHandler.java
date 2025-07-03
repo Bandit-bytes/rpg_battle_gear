@@ -37,25 +37,31 @@ public class InfusionAltarScreenHandler extends AnvilMenu {
         ItemStack input1 = this.inputSlots.getItem(0);
         ItemStack input2 = this.inputSlots.getItem(1);
 
-        if (input1.getItem() == Items.ECHO_SHARD && input2.getItem() == Items.PHANTOM_MEMBRANE) {
-            this.resultSlots.setItem(0, new ItemStack(BattleGearItems.SACRED_GEM.get()));
-        } else if (input1.getItem() == Items.DIAMOND && input2.getItem() == Items.NETHERITE_INGOT) {
-            this.resultSlots.setItem(0, new ItemStack(BattleGearItems.ANCIENT_CORE.get()));
-        } else if (input1.getItem() == Items.BLAZE_ROD && input2.getItem() == Items.GHAST_TEAR) {
-            this.resultSlots.setItem(0, new ItemStack(BattleGearItems.MYSTIC_ESSENCE.get()));
-        } else if (input1.getItem() == Items.DIAMOND && input2.getItem() == Items.GOLD_INGOT) {
-            this.resultSlots.setItem(0, new ItemStack(BattleGearItems.TEMPLAR_EMBLEM.get()));
-        } else if (input1.getItem() == Items.GOLDEN_APPLE && input2.getItem() == Items.GHAST_TEAR) {
-            this.resultSlots.setItem(0, new ItemStack(BattleGearItems.GUARDIAN_HEART.get()));
+        for (SimpleInfusionRecipe recipe : getInfusionRecipes()) {
+            if (recipe.matches(input1, input2)) {
+                int crafts = Math.min(
+                        input1.getCount() / recipe.getRequiredCount1(),
+                        input2.getCount() / recipe.getRequiredCount2()
+                );
+
+                if (crafts > 0) {
+                    ItemStack result = recipe.getResult().copy();
+                    result.setCount(result.getCount() * crafts);
+                    this.resultSlots.setItem(0, result);
+                }
+                return;
+            }
         }
     }
+
     public static List<SimpleInfusionRecipe> getInfusionRecipes() {
         return Arrays.asList(
-                new SimpleInfusionRecipe(new ItemStack(Items.ECHO_SHARD), new ItemStack(Items.PHANTOM_MEMBRANE), new ItemStack(BattleGearItems.SACRED_GEM.get())),
-                new SimpleInfusionRecipe(new ItemStack(Items.DIAMOND), new ItemStack(Items.NETHERITE_INGOT), new ItemStack(BattleGearItems.ANCIENT_CORE.get())),
-                new SimpleInfusionRecipe(new ItemStack(Items.BLAZE_ROD), new ItemStack(Items.GHAST_TEAR), new ItemStack(BattleGearItems.MYSTIC_ESSENCE.get())),
-                new SimpleInfusionRecipe(new ItemStack(Items.DIAMOND), new ItemStack(Items.GOLD_INGOT), new ItemStack(BattleGearItems.TEMPLAR_EMBLEM.get())),
-                new SimpleInfusionRecipe(new ItemStack(Items.GOLDEN_APPLE), new ItemStack(Items.GHAST_TEAR), new ItemStack(BattleGearItems.GUARDIAN_HEART.get()))
+                new SimpleInfusionRecipe(new ItemStack(Items.ECHO_SHARD), new ItemStack(Items.PHANTOM_MEMBRANE), new ItemStack(BattleGearItems.SACRED_GEM.get()), 1, 1),
+                new SimpleInfusionRecipe(new ItemStack(Items.DIAMOND), new ItemStack(Items.NETHERITE_INGOT), new ItemStack(BattleGearItems.ANCIENT_CORE.get()), 1, 1),
+                new SimpleInfusionRecipe(new ItemStack(Items.BLAZE_ROD), new ItemStack(Items.GHAST_TEAR), new ItemStack(BattleGearItems.MYSTIC_ESSENCE.get()), 1, 1),
+                new SimpleInfusionRecipe(new ItemStack(Items.DIAMOND), new ItemStack(Items.GOLD_INGOT), new ItemStack(BattleGearItems.TEMPLAR_EMBLEM.get()), 1, 1),
+                new SimpleInfusionRecipe(new ItemStack(Items.GOLDEN_APPLE), new ItemStack(Items.GHAST_TEAR), new ItemStack(BattleGearItems.GUARDIAN_HEART.get()), 1, 1)
         );
     }
+
 }
