@@ -30,26 +30,32 @@
   "item.rpg_battle_gear.valor_sword": "Valor Sword",
   "item.rpg_battle_gear.templar_axe": "Templar Axe",
   "item.rpg_battle_gear.guardian_hammer": "Guardian Hammer",
+
+  "item.rpg_battle_gear.explosion_sword": "Explosion Sword",
+  "item.rpg_battle_gear.explosion_sword.tooltip": "Explodes on hit, damaging enemies without harming terrain.",
+
+  "item.rpg_battle_gear.fire_sword": "Fire Sword",
+  "item.rpg_battle_gear.fire_sword.tooltip": "Ignites enemies with each strike.",
+
+  "item.rpg_battle_gear.flower_sword": "Flower Sword",
+  "item.rpg_battle_gear.flower_sword.tooltip": "Applies a vine snare. Deals bonus damage to slowed enemies.",
+
+  "item.rpg_battle_gear.ice_sword": "Ice Sword",
+  "item.rpg_battle_gear.ice_sword.tooltip": "Chills targets. Extra damage against frozen or slowed enemies.",
+
+  "item.rpg_battle_gear.jewel_sword": "Jewel Sword",
+  "item.rpg_battle_gear.jewel_sword.tooltip": "Builds resonance with each hit. Every third strike releases a radiant shockwave.",
+
   "item.rpg_battle_gear.lava_sword": "Lava Sword",
-  "item.rpg_battle_gear.lava_sword.tooltip": "Blazing fury forged in molten stone.",
+  "item.rpg_battle_gear.lava_sword.tooltip": "Builds heat as you strike. Every third hit erupts in fire and knockback.",
 
   "item.rpg_battle_gear.ocean_sword": "Ocean Sword",
-  "item.rpg_battle_gear.ocean_sword.tooltip": "Tides crash with every swing.",
+  "item.rpg_battle_gear.ocean_sword.tooltip": "Builds tide. Every third hit sends out a water wave and grants oceanic speed.",
+
   "item.rpg_battle_gear.octopus_sword": "Octopus Sword",
-  "item.rpg_battle_gear.octopus_sword.tooltip": "Slippery, strange, and stronger than it looks.",
-  "item.rpg_battle_gear.explosion_sword": "Explosion Sword",
-  "item.rpg_battle_gear.explosion_sword.tooltip": "Boom. Enough said.",
-  "item.rpg_battle_gear.fire_sword": "Fire Sword",
-  "item.rpg_battle_gear.fire_sword.tooltip": "Flames dance from its blade, eager to burn.",
-  "item.rpg_battle_gear.flower_sword": "Flower Sword",
-  "item.rpg_battle_gear.flower_sword.tooltip": "Beautiful, thorny, and unexpectedly deadly.",
-  "item.rpg_battle_gear.ice_sword": "Ice Sword",
-  "item.rpg_battle_gear.ice_sword.tooltip": "Freezes the air around it with every swing.",
-  "item.rpg_battle_gear.jewel_sword": "Jewel Sword",
-  "item.rpg_battle_gear.jewel_sword.tooltip": "Crystallized magic pulses from within.",
+  "item.rpg_battle_gear.octopus_sword.tooltip": "Blinds and slows on hit. Every third strike pulls the target toward you in an ink burst.",
 
   "block.rpg_battle_gear.infusion_altar": "Infusion Altar",
-
   "jei.category.infusion_altar": "Infusion Altar",
 
   "item.battlegear.crusader_armor.tooltip": "Armor of crusader",

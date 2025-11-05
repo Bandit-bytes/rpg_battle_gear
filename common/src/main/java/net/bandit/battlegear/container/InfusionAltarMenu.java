@@ -29,6 +29,9 @@ public class InfusionAltarMenu extends AbstractContainerMenu {
         super(MenuRegistries.INFUSION_ALTAR_MENU.get(), syncId);
         this.context = context;
 
+        // Ensure result slot is initialized
+        this.resultSlots.setItem(0, ItemStack.EMPTY);
+
         // Input slots
         this.addSlot(new Slot(inputSlots, 0, 27, 47));
         this.addSlot(new Slot(inputSlots, 1, 76, 47));
@@ -61,7 +64,12 @@ public class InfusionAltarMenu extends AbstractContainerMenu {
 
     @Override
     public ItemStack quickMoveStack(Player player, int i) {
-        return null;
+        return ItemStack.EMPTY;
+    }
+    @Override
+    public void removed(Player player) {
+        super.removed(player);
+        this.clearContainer(player, inputSlots);
     }
 
     @Override

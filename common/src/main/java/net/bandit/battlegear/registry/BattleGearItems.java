@@ -63,12 +63,12 @@ public class BattleGearItems {
                     .attributes(SwordItem.createAttributes(Tiers.IRON, 7, -2.0F)).rarity(Rarity.UNCOMMON)
                     .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> TEMPLAR_AXE = ITEMS.register("templar_axe", () ->
-            new SwordItem(Tiers.IRON, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(Tiers.IRON, 11, -2.0F)).rarity(Rarity.RARE)
+            new SwordItem(Tiers.NETHERITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.NETHERITE, 9, -2.0F)).rarity(Rarity.RARE)
                     .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> GUARDIAN_HAMMER = ITEMS.register("guardian_hammer", () ->
-            new SwordItem(Tiers.IRON, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(Tiers.IRON, 13, -2.0F)).rarity(Rarity.EPIC)
+            new SwordItem(Tiers.NETHERITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.NETHERITE, 10, -2.0F)).rarity(Rarity.EPIC)
                     .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> LAVA_SWORD = ITEMS.register("lava_sword", () ->
             new LavaSword(Tiers.IRON, new Item.Properties()
@@ -106,8 +106,8 @@ public class BattleGearItems {
                     .rarity(Rarity.UNCOMMON)
                     .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> JEWEL_SWORD = ITEMS.register("jewel_sword", () ->
-            new JewelSword(Tiers.IRON, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(Tiers.IRON, 8, -1.6F))
+            new JewelSword(Tiers.DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.DIAMOND, 8, -1.6F))
                     .rarity(Rarity.EPIC)
                     .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
 

@@ -1,5 +1,6 @@
 package net.bandit.battlegear.block;
 
+import net.bandit.battlegear.container.InfusionAltarMenu;
 import net.bandit.battlegear.container.InfusionAltarScreenHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -42,6 +43,12 @@ public class InfusionAltarBlock extends Block {
                 Component.literal("Infusion Altar"));
     }
 
+//    @Override
+//    public MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
+//        return new SimpleMenuProvider((syncId, inventory, player) ->
+//                new InfusionAltarMenu(syncId, inventory, ContainerLevelAccess.create(level, pos)),
+//                Component.literal("Infusion Altar"));
+//    }
 
 
     @Override
