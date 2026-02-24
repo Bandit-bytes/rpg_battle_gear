@@ -50,7 +50,6 @@ public class InfusionAltarMenu extends AbstractContainerMenu {
             }
         });
 
-        // Player inventory slots
         for (int row = 0; row < 3; ++row) {
             for (int col = 0; col < 9; ++col) {
                 this.addSlot(new Slot(playerInventory, col + row * 9 + 9, 8 + col * 18, 84 + row * 18));
@@ -119,7 +118,7 @@ public class InfusionAltarMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player player) {
-        return true; // Optionally use context.stillValid()
+        return true;
     }
 
     public static List<SimpleInfusionRecipe> getInfusionRecipes() {

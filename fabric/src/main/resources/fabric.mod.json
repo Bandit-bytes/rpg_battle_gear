@@ -20,6 +20,9 @@
     ],
     "client": [
       "net.bandit.battlegear.fabric.client.BattleGearModFabricClient"
+    ],
+    "emi": [
+      "net.bandit.battlegear.emi.BattleGearEmiPlugin"
     ]
   },
   "mixins": [
