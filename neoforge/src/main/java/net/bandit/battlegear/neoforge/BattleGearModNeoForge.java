@@ -7,7 +7,6 @@ import net.neoforged.fml.common.Mod;
 public final class BattleGearModNeoForge {
 
     public BattleGearModNeoForge() {
-        // Run our common setup.
         BattleGearMod.init();
     }
 

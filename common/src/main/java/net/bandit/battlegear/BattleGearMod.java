@@ -12,6 +12,7 @@ public final class BattleGearMod {
         TabRegistry.init();
         MenuRegistries.init();
         BlockRegistry.init();
+        RecipeRegistries.init();
         BattleGearConfig.loadConfig();
     }
     public static void initClient() {

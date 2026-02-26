@@ -1,6 +1,6 @@
 package net.bandit.battlegear.client.screen;
 
-import net.bandit.battlegear.container.InfusionAltarMenu;
+import net.bandit.battlegear.container.InfusionAltarScreenHandler;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
@@ -9,11 +9,11 @@ import net.minecraft.world.entity.player.Inventory;
 
 import static net.bandit.battlegear.BattleGearMod.MOD_ID;
 
-public class InfusionAltarScreen extends AbstractContainerScreen<InfusionAltarMenu> {
+public class InfusionAltarScreen extends AbstractContainerScreen<InfusionAltarScreenHandler> {
     private static final ResourceLocation TEXTURE =
             ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/infusion_altar.png");
 
-    public InfusionAltarScreen(InfusionAltarMenu menu, Inventory playerInventory, Component title) {
+    public InfusionAltarScreen(InfusionAltarScreenHandler menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
         this.imageWidth = 176;
         this.imageHeight = 166;

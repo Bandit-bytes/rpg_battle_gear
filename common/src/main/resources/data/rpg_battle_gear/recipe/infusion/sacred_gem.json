@@ -1,0 +1,9 @@
+{
+  "type": "rpg_battle_gear:infusion",
+  "id": "rpg_battle_gear:infusion/sacred_gem",
+  "ingredient1": { "item": "minecraft:echo_shard" },
+  "count1": 1,
+  "ingredient2": { "item": "minecraft:phantom_membrane" },
+  "count2": 1,
+  "result": { "id": "rpg_battle_gear:sacred_gem", "count": 1 }
+}

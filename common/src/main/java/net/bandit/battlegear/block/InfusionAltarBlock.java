@@ -1,15 +1,18 @@
 package net.bandit.battlegear.block;
 
-import net.bandit.battlegear.container.InfusionAltarMenu;
+import dev.architectury.registry.menu.MenuRegistry;
 import net.bandit.battlegear.container.InfusionAltarScreenHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerLevelAccess;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -29,27 +32,31 @@ public class InfusionAltarBlock extends Block {
     }
 
     @Override
-    protected @NotNull InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        if (!level.isClientSide) {
-            player.openMenu(state.getMenuProvider(level, pos));
-        }
-        return InteractionResult.SUCCESS;
+    protected @NotNull InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
+        if (level.isClientSide) return InteractionResult.SUCCESS;
+        MenuRegistry.openMenu((ServerPlayer) player, createProvider(level, pos));
+        return InteractionResult.CONSUME;
+    }
+
+    @Override
+    protected @NotNull ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, net.minecraft.world.InteractionHand hand, BlockHitResult hit) {
+        if (level.isClientSide) return ItemInteractionResult.SUCCESS;
+
+        MenuRegistry.openMenu((ServerPlayer) player, createProvider(level, pos));
+        return ItemInteractionResult.CONSUME;
+    }
+
+    private MenuProvider createProvider(Level level, BlockPos pos) {
+        return new SimpleMenuProvider(
+                (syncId, inv, p) -> new InfusionAltarScreenHandler(syncId, inv, ContainerLevelAccess.create(level, pos)),
+                Component.literal("Infusion Altar")
+        );
     }
 
     @Override
     public MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
-        return new SimpleMenuProvider((syncId, inventory, player) ->
-                new InfusionAltarScreenHandler(syncId, inventory, ContainerLevelAccess.create(level, pos)),
-                Component.literal("Infusion Altar"));
+        return createProvider(level, pos);
     }
-
-//    @Override
-//    public MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
-//        return new SimpleMenuProvider((syncId, inventory, player) ->
-//                new InfusionAltarMenu(syncId, inventory, ContainerLevelAccess.create(level, pos)),
-//                Component.literal("Infusion Altar"));
-//    }
-
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -61,4 +68,3 @@ public class InfusionAltarBlock extends Block {
         builder.add(FACING);
     }
 }
-

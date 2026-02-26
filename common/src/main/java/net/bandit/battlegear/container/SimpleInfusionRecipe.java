@@ -25,7 +25,6 @@ public class SimpleInfusionRecipe {
     public ItemStack craft(ItemStack stack1, ItemStack stack2) {
         if (!matches(stack1, stack2)) return ItemStack.EMPTY;
 
-        // Calculate how many full sets of input are present
         int possibleCrafts = Math.min(stack1.getCount() / requiredCount1, stack2.getCount() / requiredCount2);
 
         ItemStack resultStack = result.copy();

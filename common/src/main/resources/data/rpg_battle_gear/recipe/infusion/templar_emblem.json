@@ -1,0 +1,9 @@
+{
+  "type": "rpg_battle_gear:infusion",
+  "id": "rpg_battle_gear:infusion/templar_emblem",
+  "ingredient1": { "item": "minecraft:diamond" },
+  "count1": 1,
+  "ingredient2": { "item": "minecraft:gold_ingot" },
+  "count2": 1,
+  "result": { "id": "rpg_battle_gear:templar_emblem", "count": 1 }
+}

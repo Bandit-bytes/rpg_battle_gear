@@ -1,0 +1,9 @@
+{
+  "type": "rpg_battle_gear:infusion",
+  "id": "rpg_battle_gear:infusion/mystic_essence",
+  "ingredient1": { "item": "minecraft:blaze_rod" },
+  "count1": 1,
+  "ingredient2": { "item": "minecraft:ghast_tear" },
+  "count2": 1,
+  "result": { "id": "rpg_battle_gear:mystic_essence", "count": 1 }
+}

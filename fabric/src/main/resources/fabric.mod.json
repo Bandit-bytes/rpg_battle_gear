@@ -22,7 +22,7 @@
       "net.bandit.battlegear.fabric.client.BattleGearModFabricClient"
     ],
     "emi": [
-      "net.bandit.battlegear.emi.BattleGearEmiPlugin"
+      "net.bandit.battlegear.fabric.emi.BattleGearEmiPlugin"
     ]
   },
   "mixins": [
