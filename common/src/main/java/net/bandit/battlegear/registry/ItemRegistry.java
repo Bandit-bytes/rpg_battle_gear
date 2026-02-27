@@ -5,10 +5,15 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import net.bandit.battlegear.item.*;
 import net.bandit.battlegear.item.armor.*;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.*;
 import net.bandit.battlegear.BattleGearMod;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 
-public class BattleGearItems {
+public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(BattleGearMod.MOD_ID, Registries.ITEM);
 
     // ARMOR SETS
@@ -57,6 +62,32 @@ public class BattleGearItems {
     public static final RegistrySupplier<Item> SERAPHIM_BOOTS = ITEMS.register("seraphim_boots",
             () -> new SeraphimArmorItem(BattleGearArmorMaterials.SERAPHIM, ArmorItem.Type.BOOTS, new Item.Properties().durability(490).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.RARE)));
 
+    public static final RegistrySupplier<Item> SOVEREIGN_HELMET = ITEMS.register("sovereign_helmet",
+            () -> new SovereignArmorItem(BattleGearArmorMaterials.SOVEREIGN, ArmorItem.Type.HELMET, new Item.Properties().durability(560).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> SOVEREIGN_CHESTPLATE = ITEMS.register("sovereign_chestplate",
+            () -> new SovereignArmorItem(BattleGearArmorMaterials.SOVEREIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(560).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> SOVEREIGN_LEGGINGS = ITEMS.register("sovereign_leggings",
+            () -> new SovereignArmorItem(BattleGearArmorMaterials.SOVEREIGN, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(560).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> SOVEREIGN_BOOTS = ITEMS.register("sovereign_boots",
+            () -> new SovereignArmorItem(BattleGearArmorMaterials.SOVEREIGN, ArmorItem.Type.BOOTS, new Item.Properties().durability(560).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+
+    public static final RegistrySupplier<Item> DREADLORD_HELMET = ITEMS.register("dreadlord_helmet",
+            () -> new DreadlordArmorItem(BattleGearArmorMaterials.DREADLORD, ArmorItem.Type.HELMET, new Item.Properties().durability(610).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> DREADLORD_CHESTPLATE = ITEMS.register("dreadlord_chestplate",
+            () -> new DreadlordArmorItem(BattleGearArmorMaterials.DREADLORD, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(610).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> DREADLORD_LEGGINGS = ITEMS.register("dreadlord_leggings",
+            () -> new DreadlordArmorItem(BattleGearArmorMaterials.DREADLORD, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(610).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> DREADLORD_BOOTS = ITEMS.register("dreadlord_boots",
+            () -> new DreadlordArmorItem(BattleGearArmorMaterials.DREADLORD, ArmorItem.Type.BOOTS, new Item.Properties().durability(610).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+
+    public static final RegistrySupplier<Item> HELLFORGED_HELMET = ITEMS.register("hellforged_helmet",
+            () -> new HellforgedArmorItem(BattleGearArmorMaterials.HELLFORGED, ArmorItem.Type.HELMET, new Item.Properties().durability(610).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> HELLFORGED_CHESTPLATE = ITEMS.register("hellforged_chestplate",
+            () -> new HellforgedArmorItem(BattleGearArmorMaterials.HELLFORGED, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(610).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> HELLFORGED_LEGGINGS = ITEMS.register("hellforged_leggings",
+            () -> new HellforgedArmorItem(BattleGearArmorMaterials.HELLFORGED, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(610).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> HELLFORGED_BOOTS = ITEMS.register("hellforged_boots",
+            () -> new HellforgedArmorItem(BattleGearArmorMaterials.HELLFORGED, ArmorItem.Type.BOOTS, new Item.Properties().durability(610).stacksTo(1).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).rarity(Rarity.EPIC)));
     //WEAPONS
     public static final RegistrySupplier<Item> VALOR_SWORD = ITEMS.register("valor_sword", () ->
             new SwordItem(Tiers.IRON, new Item.Properties()
@@ -67,9 +98,24 @@ public class BattleGearItems {
                     .attributes(SwordItem.createAttributes(Tiers.NETHERITE, 9, -2.0F)).rarity(Rarity.RARE)
                     .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> GUARDIAN_HAMMER = ITEMS.register("guardian_hammer", () ->
-            new SwordItem(Tiers.NETHERITE, new Item.Properties()
+            new MaceItem(
+                    new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).durability(2031).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB).attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE,
+                            new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, 12.0D, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.bySlot(EquipmentSlot.MAINHAND)).add(Attributes.ATTACK_SPEED,
+                            new AttributeModifier(Item.BASE_ATTACK_SPEED_ID, -3.2D, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.bySlot(EquipmentSlot.MAINHAND)).build())));
+    public static final RegistrySupplier<Item> SOUL_BLADE = ITEMS.register("soul_blade", () ->
+            new SoulBladeSwordItem(Tiers.NETHERITE, new Item.Properties()
                     .attributes(SwordItem.createAttributes(Tiers.NETHERITE, 10, -2.0F)).rarity(Rarity.EPIC)
                     .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> STORMREAVER = ITEMS.register("stormreaver",
+            () -> new StormreaverSwordItem(
+                    Tiers.NETHERITE,
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .durability(2031)
+                            .rarity(Rarity.EPIC)
+                            .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)
+                            .attributes(SwordItem.createAttributes(Tiers.NETHERITE, 10, -2.4F))
+            ));
     public static final RegistrySupplier<Item> LAVA_SWORD = ITEMS.register("lava_sword", () ->
             new LavaSword(Tiers.IRON, new Item.Properties()
                     .attributes(SwordItem.createAttributes(Tiers.IRON, 7, -2.2F))
@@ -112,11 +158,15 @@ public class BattleGearItems {
                     .arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
 
     // MISCELLANEOUS
+    public static final RegistrySupplier<Item> ARCANE_EMBER = ITEMS.register("arcane_ember", () -> new ArcaneEmberItem(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> SACRED_GEM = ITEMS.register("sacred_gem", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.RARE).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> ANCIENT_CORE = ITEMS.register("ancient_core", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> STORM_CORE = ITEMS.register("storm_core", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> SOUL_CORE = ITEMS.register("soul_core", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> MYSTIC_ESSENCE = ITEMS.register("mystic_essence", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> TEMPLAR_EMBLEM = ITEMS.register("templar_emblem", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.RARE).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
     public static final RegistrySupplier<Item> GUARDIAN_HEART = ITEMS.register("guardian_heart", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
+    public static final RegistrySupplier<Item> SOVEREIGN_GEM = ITEMS.register("sovereign_gem", () -> new SovereignGemItem(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).arch$tab(TabRegistry.RPG_BATTLEGEAR_TAB)));
 
     public static void init() {
         ITEMS.register();

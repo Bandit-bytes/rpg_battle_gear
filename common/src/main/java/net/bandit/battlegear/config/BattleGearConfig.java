@@ -16,6 +16,11 @@ public class BattleGearConfig {
     public static boolean ENABLE_MYSTIC_SET_BONUS = true;
     public static boolean ENABLE_SERAPHIM_SET_BONUS = true;
     public static boolean ENABLE_TEMPLAR_SET_BONUS = true;
+    public static boolean ENABLE_HELLFORGED_SET_BONUS = true;
+    public static boolean ENABLE_SOVEREIGN_SET_BONUS = true;
+    public static boolean ENABLE_SOVEREIGN_SMITE = true;
+    public static boolean ENABLE_DREADLORD_SET_BONUS = true;
+    public static boolean ENABLE_DREADLORD_BLOOD_PACT = true;
 
     public static void loadConfig() {
         try {
@@ -32,6 +37,11 @@ public class BattleGearConfig {
             ENABLE_MYSTIC_SET_BONUS = Boolean.parseBoolean(props.getProperty("enable_berserker_set_bonus", "true"));
             ENABLE_SERAPHIM_SET_BONUS = Boolean.parseBoolean(props.getProperty("enable_valkyrie_set_bonus", "true"));
             ENABLE_TEMPLAR_SET_BONUS = Boolean.parseBoolean(props.getProperty("enable_sentinel_set_bonus", "true"));
+            ENABLE_HELLFORGED_SET_BONUS = Boolean.parseBoolean(props.getProperty("enable_hellforged_set_bonus", "true"));
+            ENABLE_SOVEREIGN_SET_BONUS = Boolean.parseBoolean(props.getProperty("enable_sovereign_set_bonus", "true"));
+            ENABLE_SOVEREIGN_SMITE = Boolean.parseBoolean(props.getProperty("enable_sovereign_smite", "true"));
+            ENABLE_DREADLORD_SET_BONUS = Boolean.parseBoolean(props.getProperty("enable_dreadlord_set_bonus", "true"));
+            ENABLE_DREADLORD_BLOOD_PACT = Boolean.parseBoolean(props.getProperty("enable_dreadlord_blood_pact", "true"));
 
         } catch (IOException e) {
             System.err.println("Failed to load BattleGear config: " + e);
@@ -44,6 +54,11 @@ public class BattleGearConfig {
         props.setProperty("enable_berserker_set_bonus", "true");
         props.setProperty("enable_valkyrie_set_bonus", "true");
         props.setProperty("enable_sentinel_set_bonus", "true");
+        props.setProperty("enable_hellforged_set_bonus", "true");
+        props.setProperty("enable_sovereign_set_bonus", "true");
+        props.setProperty("enable_sovereign_smite", "true");
+        props.setProperty("enable_dreadlord_set_bonus", "true");
+        props.setProperty("enable_dreadlord_blood_pact", "true");
         Files.createDirectories(configPath.getParent());
         try (OutputStream output = Files.newOutputStream(configPath)) {
             props.store(output, "BattleGear Armor Set Bonuses Configuration");

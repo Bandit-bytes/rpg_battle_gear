@@ -1,0 +1,9 @@
+{
+  "type": "rpg_battle_gear:infusion",
+  "id": "rpg_battle_gear:infusion/storm_core",
+  "ingredient1": { "item": "minecraft:trident" },
+  "count1": 1,
+  "ingredient2": { "item": "minecraft:nether_star" },
+  "count2": 1,
+  "result": { "id": "rpg_battle_gear:storm_core", "count": 1 }
+}

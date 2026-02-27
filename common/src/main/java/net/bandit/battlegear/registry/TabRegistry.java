@@ -15,7 +15,7 @@ public class TabRegistry {
             "rpg_battlegear_tab",
             () -> CreativeTabRegistry.create(
                     Component.translatable("category.rpg_battlegear"),
-                    () -> new ItemStack(BattleGearItems.GUARDIAN_HELMET.get())
+                    () -> new ItemStack(ItemRegistry.GUARDIAN_HELMET.get())
             )
     );
 

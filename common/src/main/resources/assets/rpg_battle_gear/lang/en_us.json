@@ -20,14 +20,32 @@
   "item.rpg_battle_gear.templar_chestplate": "Templar Chestplate",
   "item.rpg_battle_gear.templar_leggings": "Templar Leggings",
   "item.rpg_battle_gear.templar_boots": "Templar Boots",
+  "item.rpg_battle_gear.hellforged_helmet": "Hellforged Helmet",
+  "item.rpg_battle_gear.hellforged_chestplate": "Hellforged Chestplate",
+  "item.rpg_battle_gear.hellforged_leggings": "Hellforged Leggings",
+  "item.rpg_battle_gear.hellforged_boots": "Hellforged Boots",
+  "item.rpg_battle_gear.sovereign_helmet": "Sovereign Helmet",
+  "item.rpg_battle_gear.sovereign_chestplate": "Sovereign Chestplate",
+  "item.rpg_battle_gear.sovereign_leggings": "Sovereign Leggings",
+  "item.rpg_battle_gear.sovereign_boots": "Sovereign Boots",
+  "item.rpg_battle_gear.dreadlord_helmet": "Dreadlord Helmet",
+  "item.rpg_battle_gear.dreadlord_chestplate": "Dreadlord Chestplate",
+  "item.rpg_battle_gear.dreadlord_leggings": "Dreadlord Leggings",
+  "item.rpg_battle_gear.dreadlord_boots": "Dreadlord Boots",
 
   "item.rpg_battle_gear.guardian_heart": "Guardian Heart",
   "item.rpg_battle_gear.sacred_gem": "Sacred Gem",
   "item.rpg_battle_gear.templar_emblem": "Templar Emblem",
   "item.rpg_battle_gear.ancient_core": "Ancient Core",
+  "item.rpg_battle_gear.storm_core": "Storm Core",
+  "item.rpg_battle_gear.soul_core": "Soul Core",
   "item.rpg_battle_gear.mystic_essence": "Mystic Essence",
+  "item.rpg_battle_gear.sovereign_gem": "Sovereign Gem",
+  "tooltip.rpg_battle_gear.sovereign_gem": "Use to craft the Sovereign Set",
 
   "item.rpg_battle_gear.valor_sword": "Valor Sword",
+  "item.rpg_battle_gear.soul_blade": "Soul Blade",
+  "item.rpg_battle_gear.stormreaver": "Stormreaver",
   "item.rpg_battle_gear.templar_axe": "Templar Axe",
   "item.rpg_battle_gear.guardian_hammer": "Guardian Hammer",
 
@@ -69,6 +87,37 @@
   "tooltip.battlegear.templar_armor.effect": "Don the Armor of Templar, and let swiftness be your ally.",
   "tooltip.battlegear.guardian_armor.effect": "Bear the Guardian's Bastion, and fortify your very soul.",
   "tooltip.battlegear.seraphim_armor.effect": "Full set grants Wind's Embrace, boosting your agility.",
-  "emi.category.rpg_battle_gear.infusion_altar": "Infusion Altar"
+  "emi.category.rpg_battle_gear.infusion_altar": "Infusion Altar",
+  "item.rpg_battle_gear.arcane_ember": "Arcane Ember",
+  "tooltip.rpg_battle_gear.arcane_ember": "To Craft the HellForged Armor Set",
+
+  "item.battlegear.sovereign_helmet": "Sovereign Helmet",
+  "item.battlegear.sovereign_chestplate": "Sovereign Chestplate",
+  "item.battlegear.sovereign_leggings": "Sovereign Leggings",
+  "item.battlegear.sovereign_boots": "Sovereign Boots",
+
+  "item.battlegear.sovereign_armor.tooltip": "§bWorn by rulers of the battlefield.",
+  "tooltip.battlegear.sovereign_armor.bonus_1": "Full Set: Regeneration I & Absorption II",
+  "tooltip.battlegear.sovereign_armor.bonus_2": "On Hit: Judgement Mark (next hit detonates)",
+
+  "item.battlegear.hellforged_helmet": "Hellforged Helmet",
+  "item.battlegear.hellforged_chestplate": "Hellforged Chestplate",
+  "item.battlegear.hellforged_leggings": "Hellforged Leggings",
+  "item.battlegear.hellforged_boots": "Hellforged Boots",
+
+  "item.battlegear.hellforged_armor.tooltip": "§6Forged in the deepest fires of the Nether.",
+  "tooltip.battlegear.hellforged_armor.effect": "Full Set Bonus: Fire Resistance II, Resistance III, Strength II",
+
+  "item.battlegear.dreadlord_armor.tooltip": "Forged for conquerors of ruin.",
+  "tooltip.battlegear.dreadlord_armor.bonus_1": "Full Set: Resistance I & Strength I",
+  "tooltip.battlegear.dreadlord_armor.bonus_2": "On Hit: Blood Pact (withers, weakens, steals life)",
+
+  "item.battlegear.stormreaver.tooltip": "A blade that drinks lightning.",
+  "tooltip.battlegear.stormreaver.line1": "On Hit: Storm Chain (arcs to nearby enemies)",
+  "tooltip.battlegear.stormreaver.line2": "Sneak + Use: Storm Surge (AOE zap)",
+
+  "item.battlegear.soul_blade.tooltip": "A blade that hungers for the living.",
+  "tooltip.battlegear.soul_blade.line1": "On Hit: Soul Brand (marks and withers targets)",
+  "tooltip.battlegear.soul_blade.line2": "Sneak + Use: Soul Nova (drains nearby enemies)"
 
 }

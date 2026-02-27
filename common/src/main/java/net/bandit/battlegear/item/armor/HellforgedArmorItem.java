@@ -1,0 +1,55 @@
+package net.bandit.battlegear.item.armor;
+
+import net.bandit.battlegear.config.BattleGearConfig;
+import net.minecraft.ChatFormatting;
+import net.minecraft.core.Holder;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
+
+import java.util.List;
+
+public class HellforgedArmorItem extends ArmorItem {
+
+    public HellforgedArmorItem(Holder<ArmorMaterial> material, ArmorItem.Type type, Properties properties) {
+        super(material, type, properties);
+    }
+
+    @Override
+    public void inventoryTick(ItemStack stack, Level world, net.minecraft.world.entity.Entity entity, int slot, boolean isSelected) {
+        if (entity instanceof Player player && !world.isClientSide) {
+            // Add this config toggle in your BattleGearConfig if you want it controllable.
+            if (BattleGearConfig.ENABLE_HELLFORGED_SET_BONUS && hasFullSet(player)) {
+                player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 220, 0, true, false, false));
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 220, 2, true, false, false));
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 220, 1, true, false, false));
+            }
+        }
+        super.inventoryTick(stack, world, entity, slot, isSelected);
+    }
+
+    private boolean hasFullSet(Player player) {
+        ItemStack head = player.getItemBySlot(EquipmentSlot.HEAD);
+        ItemStack chest = player.getItemBySlot(EquipmentSlot.CHEST);
+        ItemStack legs = player.getItemBySlot(EquipmentSlot.LEGS);
+        ItemStack feet = player.getItemBySlot(EquipmentSlot.FEET);
+
+        return !head.isEmpty() && head.getItem() instanceof HellforgedArmorItem &&
+                !chest.isEmpty() && chest.getItem() instanceof HellforgedArmorItem &&
+                !legs.isEmpty() && legs.getItem() instanceof HellforgedArmorItem &&
+                !feet.isEmpty() && feet.getItem() instanceof HellforgedArmorItem;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> list, TooltipFlag tooltipFlag) {
+        list.add(Component.translatable("item.battlegear.hellforged_armor.tooltip"));
+        list.add(Component.translatable("tooltip.battlegear.hellforged_armor.effect").withStyle(ChatFormatting.GRAY));
+    }
+}

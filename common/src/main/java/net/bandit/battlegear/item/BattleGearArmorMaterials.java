@@ -25,6 +25,9 @@ public final class BattleGearArmorMaterials {
     public static final Holder<ArmorMaterial> TEMPLAR;
     public static final Holder<ArmorMaterial> GUARDIAN;
     public static final Holder<ArmorMaterial> SERAPHIM;
+    public static final Holder<ArmorMaterial> HELLFORGED;
+    public static final Holder<ArmorMaterial> SOVEREIGN;
+    public static final Holder<ArmorMaterial> DREADLORD;
 
     private BattleGearArmorMaterials() {
     }
@@ -64,6 +67,27 @@ public final class BattleGearArmorMaterials {
             map.put(ArmorItem.Type.CHESTPLATE, 8);
             map.put(ArmorItem.Type.HELMET, 3);
         }), 25, 3.5F, 0.2F, Items.GOLD_INGOT);
+
+        HELLFORGED = register("hellforged", Util.make(new EnumMap<>(ArmorItem.Type.class), (map) -> {
+            map.put(ArmorItem.Type.BOOTS, 6);
+            map.put(ArmorItem.Type.LEGGINGS, 10);
+            map.put(ArmorItem.Type.CHESTPLATE, 13);
+            map.put(ArmorItem.Type.HELMET, 7);
+        }), 25, 4.0F, 0.2F, Items.NETHER_STAR);
+
+        SOVEREIGN = register("sovereign", Util.make(new EnumMap<>(ArmorItem.Type.class), (map) -> {
+            map.put(ArmorItem.Type.BOOTS, 5);
+            map.put(ArmorItem.Type.LEGGINGS, 9);
+            map.put(ArmorItem.Type.CHESTPLATE, 12);
+            map.put(ArmorItem.Type.HELMET, 6);
+        }), 22, 3.5F, 0.15F, Items.DIAMOND);
+
+        DREADLORD = register("dreadlord", Util.make(new EnumMap<>(ArmorItem.Type.class), (map) -> {
+            map.put(ArmorItem.Type.BOOTS, 6);
+            map.put(ArmorItem.Type.LEGGINGS, 10);
+            map.put(ArmorItem.Type.CHESTPLATE, 13);
+            map.put(ArmorItem.Type.HELMET, 7);
+        }), 25, 4.0F, 0.2F, Items.NETHER_STAR);
     }
 
     /**

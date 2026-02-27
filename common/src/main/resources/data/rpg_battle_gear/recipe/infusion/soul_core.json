@@ -1,0 +1,9 @@
+{
+  "type": "rpg_battle_gear:infusion",
+  "id": "rpg_battle_gear:infusion/soul_core",
+  "ingredient1": { "item": "minecraft:wither_skeleton_skull" },
+  "count1": 1,
+  "ingredient2": { "item": "minecraft:echo_shard" },
+  "count2": 2,
+  "result": { "id": "rpg_battle_gear:soul_core", "count": 1 }
+}
