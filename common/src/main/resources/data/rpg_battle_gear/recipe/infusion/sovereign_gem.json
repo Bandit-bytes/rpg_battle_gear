@@ -2,8 +2,8 @@
   "type": "rpg_battle_gear:infusion",
   "id": "rpg_battle_gear:infusion/sovereign_gem",
   "ingredient1": { "item": "minecraft:netherite_ingot" },
-  "count1": 1,
+  "count1": 2,
   "ingredient2": { "item": "minecraft:phantom_membrane" },
-  "count2": 1,
+  "count2": 6,
   "result": { "id": "rpg_battle_gear:sovereign_gem", "count": 1 }
 }

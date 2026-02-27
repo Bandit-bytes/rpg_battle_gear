@@ -2,8 +2,8 @@
   "type": "rpg_battle_gear:infusion",
   "id": "rpg_battle_gear:infusion/guardian_heart",
   "ingredient1": { "item": "minecraft:golden_apple" },
-  "count1": 1,
+  "count1": 3,
   "ingredient2": { "item": "minecraft:ghast_tear" },
-  "count2": 1,
+  "count2": 2,
   "result": { "id": "rpg_battle_gear:guardian_heart", "count": 1 }
 }

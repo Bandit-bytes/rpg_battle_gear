@@ -2,7 +2,7 @@
   "type": "rpg_battle_gear:infusion",
   "id": "rpg_battle_gear:infusion/dread_essence",
   "ingredient1": { "item": "minecraft:wither_skeleton_skull" },
-  "count1": 1,
+  "count1": 2,
   "ingredient2": { "item": "minecraft:nether_star" },
   "count2": 1,
   "result": { "id": "rpg_battle_gear:dread_essence", "count": 1 }

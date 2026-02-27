@@ -3,7 +3,7 @@
   "id": "rpg_battle_gear:infusion/arcane_ember",
 
   "ingredient1": { "item": "minecraft:blaze_rod" },
-  "count1": 2,
+  "count1": 3,
 
   "ingredient2": { "item": "minecraft:nether_star" },
   "count2": 1,

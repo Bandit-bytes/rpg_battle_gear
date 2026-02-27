@@ -2,7 +2,7 @@
   "type": "rpg_battle_gear:infusion",
   "id": "rpg_battle_gear:infusion/ancient_core",
   "ingredient1": { "item": "minecraft:diamond" },
-  "count1": 1,
+  "count1": 3,
   "ingredient2": { "item": "minecraft:netherite_ingot" },
   "count2": 1,
   "result": { "id": "rpg_battle_gear:ancient_core", "count": 1 }
